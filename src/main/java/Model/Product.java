@@ -11,7 +11,7 @@ public class Product {
     private ObjectId id;
 
     private String name;
-    private Integer precio;
+    private Integer price;
     private Integer stock;
 
     private Provider provider;
@@ -29,13 +29,13 @@ public class Product {
 
     public Product(ObjectId id,
                    String name,
-                   Integer precio,
+                   Integer price,
                    Integer stock,
                    Provider provider,
                    List<String> categories) {
         this.id = id;
         this.name = name;
-        this.precio = precio;
+        this.price = price;
         this.stock = stock;
         this.provider = provider;
         this.categories = categories;
@@ -57,12 +57,12 @@ public class Product {
         this.name = name;
     }
 
-    public Integer getPrecio() {
-        return precio;
+    public Integer getPrice() {
+        return price;
     }
 
-    public void setPrecio(Integer precio) {
-        this.precio = precio;
+    public void setPrice(Integer price) {
+        this.price = price;
     }
 
     public Integer getStock() {

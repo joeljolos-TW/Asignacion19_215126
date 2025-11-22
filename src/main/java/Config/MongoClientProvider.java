@@ -14,7 +14,7 @@ public enum MongoClientProvider {
 
     public synchronized void init() {
         if (client == null) {
-            MongoClients.create(MongoConfig.buildSettings(URI));
+            client = MongoClients.create(MongoConfig.buildSettings(URI));
             Runtime.getRuntime().addShutdownHook(new Thread(() -> {
                 try {
                     client.close();
